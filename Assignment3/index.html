@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSIGNMENT-3</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f9f4;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 10%;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: green;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px 10%;
+        }
+
+        .hero-text {
+            max-width: 50%;
+        }
+
+        .hero-text h1 {
+            font-size: 36px;
+            color: #023047;
+        }
+
+        .hero-text h1 span {
+            color: #000;
+        }
+
+        .hero-text p {
+            font-size: 16px;
+            color: #333;
+            margin: 20px 0;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background: #023047;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .hero-image {
+            max-width: 45%;
+        }
+
+        .hero-image img {
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .nav-links {
+                flex-direction: column;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-text {
+                max-width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .hero-image {
+                max-width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">LOGO </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Content</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>WEB <span>DESIGN & DEVELOPMENT</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+        <div class="hero-image">
+            <img src="/WhatsApp Image 2025-02-01 at 11.46.00_4ccb015d.jpg" >
+        </div>
+    </section>
+
+</body>
+</html>
